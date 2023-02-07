@@ -5,16 +5,12 @@ from email.mime.multipart import MIMEMultipart
 import smtplib
 import os
 
-company_names=[]
-emails = []
-
 #server initialization
 smtp = smtplib.SMTP('smtp.gmail.com', 587)
 smtp.ehlo()
 smtp.starttls()
 
 smtp.login('kavyanpatel1104@gmail.com', 'tojlsyeywebwpdni')
-
 
 #message folder
 def message(subject="Test",img=None,
@@ -81,9 +77,6 @@ def message(subject="Test",img=None,
             return msg
 
 subject_variable = "Internship Possibility Test"
-
-# Call the message function
-
 
 # Make a list of emails, where you wanna send mail
 to = [["prachiheda@gmail.com", "Amazon"],
